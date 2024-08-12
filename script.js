@@ -240,7 +240,7 @@ class Sudoku {
                 let cell = document.createElement('td');
 
                 if (this.startField[i][j] != 0)
-                    cell.style.backgroundColor = '#e0e0e0';
+                    cell.style.backgroundColor = '#e9e9e9';
                 else
                     cell.style.backgroundColor = 'white';
 
@@ -353,3 +353,9 @@ document.querySelector('table').addEventListener('click', function (event) {
 window.addEventListener('keydown', function (event) {
     sudoku.addNumbersToField(indexY, indexX, event.key);
 });
+
+for(let i = 1; i < 10; i++){
+    document.getElementById('number-' + i).addEventListener('click', function(){
+        sudoku.addNumbersToField(indexY, indexX, i);
+    });
+}
