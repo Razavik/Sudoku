@@ -240,7 +240,7 @@ class Sudoku {
                 let cell = document.createElement('td');
 
                 if (this.startField[i][j] != 0)
-                    cell.style.backgroundColor = '#e9e9e9';
+                    cell.style.backgroundColor = '#e0e0e0';
                 else
                     cell.style.backgroundColor = 'white';
 
